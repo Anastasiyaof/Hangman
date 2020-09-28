@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./index.js" defer></script>
+    <title>HANGMAN</title>
+</head>
+<body>
+    <div id = "wrapper">
+       
+      <form name="hangmanFirst" action="">
+          <fieldset>
+              <legend><h1>ВИСЕЛИЦА</h1></legend>
+              
+              <label> Придумайте слово<input type='text' name="word"></label><br /> 
+              <label> Введите описание<textarea name="description"></textarea></label>
+              <button type="submit" name = createWord> Start</button>
+           
+          </fieldset>
+      </form>
+      <form name="hangmanNext" action="" hidden>
+        <fieldset>
+            <legend><h1>ВИСЕЛИЦА</h1></legend>
+            <h2>Отгадай слово</h2>
+            <div id="meaning"></div>
+            <div id = "hiddenWord"></div> <br />
+            <div id="mistakes">Осталось 6 попыток</div>
+            <input type='text' id = "tryGuess" placeholder="Введите букву или слово"><br /> 
+            <button id = "check"> Проверить</button>
+          
+        </fieldset>
+    </form>
+    </div>
+   
+</body>
+</html>
